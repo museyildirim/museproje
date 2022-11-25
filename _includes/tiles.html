@@ -5,6 +5,9 @@
 {% endif %}
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
+  {% if tile.title == 'Hakkımızda' %}
+    {% continue %}
+  {% endif %}
   <article>
     <span class="image">
       <img src="{{ tile.image }}" alt="{{ tile.title }}" />

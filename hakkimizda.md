@@ -14,9 +14,6 @@ nav-menu: true
 	<div class="inner">
 		<p>Proje Ofisimiz Her türlü yapının Mimari Proje, Statik Proje, Statik Analiz, Çelik Konstrüksiyon Çizim, Betonarme Proje Çizim  alanlarında proje tasarımı ve danışmanlık hizmetleri vermektedir.
 <br>Proje Büromuz, Mimar ve Mühendislerden oluşan deneyimli ekibi ile Mimari Tasarım, Yapı Tasarımı, Yapı Statik Analizi ve Yapı Detaylandırma konularını kapsayan profesyonel Mimarlık-Mühendislik Hizmetleri sunmaktadır.</p>
-		<ul class="actions">
-			<li><a href="generic.html" class="button next">Get Started</a></li>
-		</ul>
 	</div>
 </section>
 
