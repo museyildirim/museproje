@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Elements
+title: Mimari Proje
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
@@ -12,7 +12,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Elements</h1>
+			<h1>Mimari Proje</h1>
 		</header>
 
 <!-- Content -->
@@ -45,7 +45,7 @@ nav-menu: true
 <hr class="major" />
 
 <!-- Elements -->
-<h2 id="elements">Elements</h2>
+<h2 id="elements">Mimari</h2>
 <div class="row 200%">
 	<div class="6u 12u$(medium)">
 
@@ -388,19 +388,6 @@ Finally, this is a <a href="#">link</a>.</p>
 <div class="box">
 	<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum.</p>
 </div>
-
-<!-- Preformatted Code -->
-<h3>Preformatted</h3>
-<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
 
 </div>
 </div>
