@@ -3,10 +3,27 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
-		<a href="#menu">Menü</a>
-	</nav>
+	<div style="width: 100%;">
+		<div style="height: min-content; display: flex; justify-content: space-between; margin: 0 0 0 0;"> 
+			<a href="{{ "" | absolute_url }}/" class="logo">
+				<strong>{{ site.title }}</strong>
+			</a>
+			<ul class="icons" style="padding-right: 2%; margin: 0 0 0 0;">
+				{% for key_value in site.socials %}
+					{% if key_value[1] %}
+						<li>
+							<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
+								<span class="label">{{ key_value[0] }}</span>
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		<nav style="float: right; vertical-align: top;">
+			<a href="#menu">Menü</a>
+		</nav>
+	</div>
 </header>
 
 <!-- Menu -->
@@ -17,16 +34,15 @@
 		        <li><a href="{{ "" | absolute_url }}/">Ana sayfa</a></li>
 	    	{% endif %}
 		{% endfor %}
-		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true and page.title != 'Hakkımızda' %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-
 		{% for page in site.pages %}
 			{% if page.title == 'Hakkımızda' %}
 				<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 			{% endif %}
+		{% endfor %}
+		{% for page in site.html_pages %}
+		    {% if page.layout != "home" and page.nav-menu == true and page.title != 'Hakkımızda' %}
+		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+		    {% endif %}
 		{% endfor %}
 	</ul>
 </nav>

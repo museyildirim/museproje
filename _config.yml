@@ -1,18 +1,19 @@
 # site settings
 title: Muse Proje
 subtitle:
-email: youremailaddress@gmail.com
+email: info@museproje.com
 description: Eğer benim bunu yaptığımı düşünüyorsan çıkar giderim.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
-
+full_address: Aşık Veysel mahallesi Nuri Pakdil Sokak No:29/30 KG RESIDENCE
+street_address:
+city:
+state: ATAŞEHİR/İSTANBUL
+zip_code:
+country:
+phone1: +90 505 131 26 00
+phone2: +90 541 296 60 94
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
@@ -22,14 +23,16 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
+  GitHub: 
   GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
-  Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
+  Google-Plus: 
+  Instagram: https://www.instagram.com/
+  LinkedIn: https://www.linkedin.com/
+  Twitter: 
   Facebook:
   Slack:
+  Whatsapp: +905051312600
+  Phone: +905051312600
 
 # build settings
 markdown: kramdown

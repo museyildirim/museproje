@@ -4,7 +4,7 @@
 		<section>
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<div class="field half first">
-					<label for="name">Name</label>
+					<label for="name">İsİm</label>
 					<input type="text" name="name" id="name" />
 				</div>
 				<div class="field half">
@@ -12,12 +12,12 @@
 					<input type="text" name="_replyto" id="email" />
 				</div>
 				<div class="field">
-					<label for="message">Message</label>
+					<label for="message">Mesaj</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
+					<li><input type="submit" value="Gönder" class="special" /></li>
+					<li><input type="reset" value="Temizle" /></li>
 				</ul>
 			</form>
 		</section>
@@ -32,31 +32,56 @@
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+					<h3>Telefon</h3>
+					<a href="tel:{{ site.phone1 }}">{{ site.phone1 }}</a><br/>
+					<a href="tel:{{ site.phone2 }}">{{ site.phone2 }}</a>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
-					<span>
-					{% if site.street_address %}
-					    {{ site.street_address }}<br />
-					{% endif %}
-					{% if site.city %}
-					    {{ site.city }},
-					{% endif %}
-					{% if site.state %}
-					    {{ site.state }} 
-					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
-					{% endif %}
-					{% if site.country %}
-					    {{ site.country }}
-					{% endif %}
+					<h3>Adres</h3>
+					<div>
+					<span style="display: inline;">
+							{% if site.full_address %}
+							{{ site.full_address %}}<br />
+							{% endif %}
+							{% if site.street_address %}
+							{{ site.street_address }}<br />
+							{% endif %}
+							{% if site.city %}
+							{{ site.city }},
+							{% endif %}
+							{% if site.state %}
+							{{ site.state }} 
+							{% endif %}
+							{% if site.zip_code %}
+							{{ site.zip_code }}<br />
+							{% endif %}
+							{% if site.country %}
+							{{ site.country }}
+							{% endif %}
 					</span>
+					<div class="mapouter" style="display: inline;">
+						<div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=369&amp;height=285&amp;hl=en&amp;q=Aşık Veysel mahallesi Nuri Pakdil Sokak No:29/30&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/">format json</a>
+						</div>
+						<style>
+						.mapouter{
+							position:relative;
+							text-align:right;
+							width:20em;
+							height:10em;}
+						.gmap_canvas {
+							overflow:hidden;
+							background:none!important;
+							width:20em;height:10em;
+							}
+						.gmap_iframe {
+							height:10em!important;
+							}
+						</style>
+					</div>
+				</div>
 				</div>
 			</section>
 		</section>
@@ -79,13 +104,12 @@
 			</ul>
 			<ul class="copyright">
 				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li>Customization: <a href="https://www.linkedin.com/in/umutalgul">Umut Ogulcan Algul</a></li>
+				<li>Base Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
 				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
 			</ul>
 		</div>
 	</footer>
-
 </div>
 
 <!-- Scripts -->
