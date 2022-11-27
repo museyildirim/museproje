@@ -9,15 +9,16 @@
 				<strong>{{ site.title }}</strong>
 			</a>
 			<ul class="icons" style="padding-right: 2%; margin: 0 0 0 0;">
-				{% for key_value in site.socials %}
+				{%- for key_value in site.socials -%}
 					{% if key_value[1] %}
-						<li>
-							<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
-								<span class="label">{{ key_value[0] }}</span>
-							</a>
-						</li>
+				<li>
+					<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
+						<span class="label">{{ key_value[0] }}</span>
+					</a>
+				</li>
 					{% endif %}
-				{% endfor %}
+				{%- endfor -%}
+
 			</ul>
 		</div>
 		<nav style="float: right; vertical-align: top;">
@@ -29,20 +30,13 @@
 <!-- Menu -->
 <nav id="menu">
 	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | absolute_url }}/">Ana sayfa</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in site.pages %}
-			{% if page.title == 'Hakkımızda' %}
-				<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+		<li><a href="{{ absolute_url }}">Ana sayfa</a></li>
+		<li><a href="{{ 'hakkimizda.html' | absolute_url }}">Hakkımızda</a></li>
+		<li><a href="{{ 'iletisim.html' | absolute_url }}">İLETİŞİM</a></li>
+		{%- for page in site.html_pages -%}
+			{% if page.nav-menu == true %}
+		<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 			{% endif %}
-		{% endfor %}
-		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true and page.title != 'Hakkımızda' %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
+		{%- endfor -%}
 	</ul>
 </nav>
