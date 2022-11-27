@@ -3,7 +3,7 @@ title: Hakkımızda
 layout: landing
 description:
 image: assets/images/pic07.jpg
-nav-menu: true
+nav-menu: false
 ---
 
 <!-- Main -->
