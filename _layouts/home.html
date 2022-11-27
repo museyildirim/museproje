@@ -17,15 +17,15 @@
             <!-- slide divs -->
             <div class="hsslide hsfirst">
                 <h1>Modern çağ, öncü hizmet</h1>
-                <img src="{{'assets/images/banner1.jpg'}}" alt="">
+                <img src="{{'assets/images/banner1.jpg'}}" style="filter: brightness(0.75);" alt="">
             </div>
             <div class="hsslide">
                 <h1>Her proje yeni bir hikaye</h1>
-                <img src="{{'assets/images/banner2.jpg'}}" alt="">
+                <img src="{{'assets/images/banner2.jpg'}}" style="filter: brightness(0.3);" alt="">
             </div>
 
-            <div style="position: absolute; width: 100vw; height: 40vh; align-items: center;">
-                <img style="margin: 2vh 40vw 0 40vw; width: 20vw; height: 20vw;" src="{{'assets/images/icongif.gif'}}">
+            <div style="position: absolute; width: 100vw; height: 40vh; display: flex; justify-content: center;">
+                <img style="margin: 0vh 0 8vh 0; min-width: 5rem; min-height: 5rem; max-width: 20rem; max-height: 20rem;" src="{{'assets/images/icon.png'}}">
             </div>
             <!-- manual nav -->
             <div class="nav-manual">
@@ -35,18 +35,6 @@
         </div>
     </section>
 
-    <!-- Banner -->
-    <!--<section id="banner" class="major">
-        <div class="inner">
-            <header class="major">
-                <h1>{{ page.landing-title }}</h1>
-            </header>
-            <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
-            </div>
-        </div>
-    </section>
-    -->
     <!-- Main -->
     <div id="main">
 
@@ -65,11 +53,9 @@
                 </ul>
             </div>
         </section>
-
     </div>
 
     {% include footer.html %}
 
 </body>
-
 </html>
