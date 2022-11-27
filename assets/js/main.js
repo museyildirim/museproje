@@ -145,8 +145,6 @@
 					x;
 
 				// Image.
-					console.log("setting image path");
-					console.log("path is url(" + $img.attr('src') + ')');
 
 					// Set image.
 						$this.css('background-image', 'url(' + $img.attr('src') + ')');
