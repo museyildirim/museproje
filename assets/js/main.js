@@ -145,13 +145,15 @@
 					x;
 
 				// Image.
+					console.log("setting image path");
+					console.log("path is url(" + $img.attr('src') + ')');
 
 					// Set image.
 						$this.css('background-image', 'url(' + $img.attr('src') + ')');
 
 					// Set position.
 						if (x = $img.data('position'))
-							$image.css('background-position', x);
+							$this.css('background-position', x);
 
 					// Hide original.
 						$image.hide();
