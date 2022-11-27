@@ -1,0 +1,197 @@
+///
+/// by A random
+///
+///
+
+
+/* HomeSlider */
+
+#homeslider {
+	@include vendor('align-items', 'center');
+	width: 100vw;
+	height: 40vh;
+	overflow: clip;
+
+
+	.hsslides {
+		display: flex;
+		width: 200%;
+		height: 40vh;
+
+		.hsslide {
+			width: 50%;
+			transition: 2s;
+			position: relative;
+
+			img {
+				width: 100vw;
+				height: 40vh;
+			}
+			
+			h1 {
+				text-align: center;
+				position: absolute;
+				width: 100vw;
+				margin-top: 25vh;
+			}
+
+			h1 {
+				width: 100vw;
+				height: 40vh;
+				position: absolute;
+				white-space: nowrap;
+			}
+		}
+		
+		.nav-manual {
+			position: absolute;
+			width: 100vw;
+			margin-top: 36vh;
+			display: flex;
+			justify-content: center;
+			
+			input {
+				all: initial;
+				appearance: auto;
+				-webkit-appearance: none;
+				outline: none;
+				width: 4px;
+				height: 4px;
+				border: 4px solid #ffffff;
+				padding: 5px;
+				border-radius: 4rem;
+				cursor: pointer;
+				transition: 500ms;
+			}
+
+			input:not(:last-child) {
+				margin-right: 1rem;
+			}
+
+			input:hover {
+				background: #ffffff;
+			}
+
+			input:checked {
+				background: #ffffff;
+			}
+		}
+	}
+}
+
+	/*
+    <section id="homeslider">
+        <div class="slides">
+            <!-- radio buttons -->
+            <input type="radio" name="hsradio-btn" id="hsradio1">
+            <input type="radio" name="hsradio-btn" id="hsradio2">
+
+            <!-- slide divs -->
+            <div class="slide first">
+                <header>
+                    <h1>Modern çağ, öncü hizmet</h1>
+                </header>
+                <img src="{{'assets/images/pic03.jpg'}}" alt="">
+            </div>
+            <div class="slide">
+                <header>
+                    <h1>Her proje yeni bir hikaye</h1>
+                </header>
+                <img src="{{'assets/images/pic07.jpg'}}" alt="">
+            </div>
+
+            <!-- auto nav -->
+            <div class="nav-auto">
+                <div class="aut-btn1"></div>
+                <div class="aut-btn2"></div>
+            </div>
+
+            <!-- manual nav -->
+            <div class="nav-manual">
+                <label for="hsradio1" class="manual-btn" id="hslabel1"></label>
+                <label for="hsradio2" class="manual-btn" id="hslabel2"></label>
+            </div>
+        </div>
+    </section>
+
+	#homeslider {
+		@include vendor('align-items', 'center');
+		width: 80vw;
+		height: 40vh;
+
+		.slides {
+			display: flex;
+			width: 500%;
+			height: 40vh;
+			overflow: hidden;
+
+
+			input {
+				display: none;
+			}
+
+			.slide {
+				width: 100vw;
+				transition: 2s;
+
+				img {
+					width: 100vw;
+					height: 40vh;
+				}
+				
+				h1 {
+					text-align: center;
+					position: absolute;
+					width: 100vw;
+					margin-top: 25vh;
+				}
+				header {
+					h1 {
+
+						white-space: nowrap;
+					}
+				}
+			}
+			
+			.nav-manual {
+				position: absolute;
+				width: 100vw;
+				margin-top: 36vh;
+				display: flex;
+				justify-content: center;
+
+				.manual-btn {
+					border: 4px solid #553333;
+					padding: 5px;
+					border-radius: 4rem;
+					cursor: pointer;
+					transition: 500ms;
+				}
+
+				.manual-btn:not(:last-child) {
+					margin-right: 4vh;
+				}
+
+				.manual-btn:hover {
+					background: #553333;
+				}
+			}
+
+			#hsradio1:checked ~ .first {
+				margin-left: 0;
+			}
+
+			#hsradio1:checked ~ #hslabel1 {
+				background-color: #553333;
+			}
+
+			#hsradio2:checked ~ .first {
+				margin-left: -100vw;
+			}
+
+			#hsradio2:checked ~ #hslabel2 {
+				background-color: #553333;
+			}
+		}
+	}
+*/

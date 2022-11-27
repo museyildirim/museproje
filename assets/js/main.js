@@ -350,3 +350,24 @@
 	});
 
 })(jQuery);
+
+var hsfirst = document.getElementsByClassName("hsfirst")[0];
+var nextChecked = 2;
+function hsOnClick(radBtn, id, offset)
+{
+	if  (radBtn.checked && nextChecked != id)
+	{
+		++nextChecked;
+		if (nextChecked > 2) nextChecked = 1;
+	}
+	hsfirst.style.marginLeft = offset + "vw";
+}
+
+setInterval(function(){
+	//document.getElementById('hsradio' + nextChecked).checked = true;
+	var rad = document.getElementById('hsradio' + nextChecked);
+	rad.checked = true;
+	rad.onclick.apply(rad);
+	++nextChecked;
+	if (nextChecked > 2) nextChecked = 1;
+  }, 4000);
