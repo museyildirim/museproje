@@ -4,6 +4,7 @@ title: Statik Proje
 description:
 image: assets/images/pic11.jpg
 nav-menu: true
+sira: 2
 ---
 
 ### Çelik Statik Proje

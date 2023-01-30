@@ -3,6 +3,7 @@ layout: post
 title: Mimari Proje
 image: assets/images/pic01.jpg
 nav-menu: true
+sira: 1
 ---
 
 
